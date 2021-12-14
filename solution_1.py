@@ -24,8 +24,6 @@ for i in range(len(data)-w_len):
         increased += 1
     window_sum = next_sum
    
-
-    
 print(increased)        
     
 
