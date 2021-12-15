@@ -26,6 +26,3 @@ for i in range(len(data)-w_len):
    
 print(increased)        
     
-
-
-
