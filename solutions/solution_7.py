@@ -4,6 +4,8 @@ path = "../data/input_7.txt"
 
 data = np.loadtxt(path, delimiter=',')
 
+# Part 1
+
 min_pos = min(data)
 max_pos = max(data)
 
@@ -15,3 +17,16 @@ for i in range(len(span)):
     
 print(min(difference_sum))
     
+    
+# Part 2   
+
+difference_sum = np.zeros(len(span))
+
+for i in range(len(span)):
+    fuel_spent = 0
+    differenence = abs(data - span[i])
+    for diff in differenence:
+        fuel_spent += np.sum(np.arange(diff+1))
+    difference_sum[i] = fuel_spent
+    
+print(min(difference_sum))
