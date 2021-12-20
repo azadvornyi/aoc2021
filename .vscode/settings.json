@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "/Users/toli/anaconda/envs/SDSS_proj/bin/python"
+    "python.pythonPath": "/Users/toli/anaconda/envs/SDSS_proj/bin/python",
+    "python.linting.enabled": false
 }
