@@ -11,11 +11,11 @@ x_val, y_val = np.loadtxt(path, unpack=True, comments=[" ", "f"], delimiter=",")
 # Part 1
 
 folds = []   
-
+reg = r"[x|y]\=\d+"
+    
 with open(path, 'r') as f:
     for line in f:
-        reg = r"[x|y]\=\d+"
-        found =re.search(reg, line)
+        found = re.search(reg, line)
         if found is not None:
             folds.append(found.group())
 

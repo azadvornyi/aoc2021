@@ -22,9 +22,9 @@ print(min(difference_sum))
 
 difference_sum = np.zeros(len(span))
 
-for i in range(len(span)):
+for i, s in enumerate(span):
     fuel_spent = 0
-    differenence = abs(data - span[i])
+    differenence = abs(data - s)
     for diff in differenence:
         fuel_spent += np.sum(np.arange(diff+1))
     difference_sum[i] = fuel_spent
