@@ -14,7 +14,7 @@ n_boards = int(len(bingo_boards)/borad_width)
 
 for board in range(n_boards):
     this_board = bingo_boards[5*board:5*board+5, :]
-       
+# needs reworking     
 for i, rnd_number in enumerate(rnd_numbers):
     rnd_numer_drawn = set(rnd_numbers[:i+1])
     
